@@ -15,7 +15,9 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#gallery{
+    margin-left: 7%;
+}
 #menu{
     position:relative;
     top:35px;
@@ -46,6 +48,7 @@ a:hover{
 }
 #block1{
 	height:auto;
+    background: linear-gradient(lightgrey, darkgrey);
 	background-color:#9fa1a6;
 	}
 
