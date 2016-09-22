@@ -1,0 +1,97 @@
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/back.png');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu{
+    position:relative;
+    top:35px;
+}
+
+#header{
+    margin:15px 0 15px 0;
+}
+.nav-pills li.active a{
+    background-color: white;
+    color:#9fa1a6;
+}
+
+.nav-pills li.active a:hover {
+    background-color: #9fa1a6;
+    color:white;
+}
+.job{
+    color:black;
+}
+
+a:hover{
+    color:white;
+}
+#work{
+    margin-bottom: 50px;
+
+}
+#block1{
+	height:auto;
+	background-color:#9fa1a6;
+	}
+
+.subtitle{
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	font-size: 6em;
+	color:white;
+}
+
+.subtitle2{
+	font-family: 'Poiret One', cursive;
+	text-align: left;
+	font-size: 3em;
+	color:white;
+}
+
+.parallax2 {
+    /* The image used */
+    background-color: white;
+
+    background-image: url('../images/2.svg');
+
+    /* Full height */
+    height: 70%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile-pic{
+	width:250px;
+	border: 5px solid white;
+	margin-left: 200px;
+	margin-top: 50px;
+	box-shadow: 2px 2px 5px #888888
+}
+
+.bio{
+	margin-bottom:20px;
+}
+
+#estudios{
+	text-align: left;
+	margin-bottom: 40px;
+}
