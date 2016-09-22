@@ -44,20 +44,60 @@ a:hover{
 }
 #work{
     margin-bottom: 50px;
-
 }
+
+#footer{
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    color:#9fa1a6;
+    background-color:white;
+    font-size:14px; 
+    text-align: center;
+    }
+
 #block1{
 	height:auto;
-    background: linear-gradient(lightgrey, darkgrey);
 	background-color:#9fa1a6;
 	}
 
+#portfolio{
+    position:relative;
+    left:70px;
+}
+#block2{
+    height:auto;
+    background: linear-gradient(#9fa1a6, darkgrey,darkslategray);
+    background-color:#9fa1a6;
+    }
 .subtitle{
 	font-family: 'Poiret One', cursive;
+
 	text-align: center;
 	font-size: 6em;
 	color:white;
 }
+#webButton{
+
+    border-radius: 15px;
+    position:relative;
+    right:87px;
+    top:40px;
+}
+
+#webButton:hover, #graphicButton:hover{
+ 
+    background-color: #4e4e4e;
+
+}
+
+#graphicButton{
+
+    border-radius: 15px; 
+    position:relative;
+    right:40px;
+    top:40px;
+}
+
 
 .subtitle2{
 	font-family: 'Poiret One', cursive;
@@ -87,7 +127,7 @@ a:hover{
 	border: 5px solid white;
 	margin-left: 200px;
 	margin-top: 50px;
-	box-shadow: 2px 2px 5px #888888
+	box-shadow: 2px 2px 5px #888888;
 }
 
 .bio{
