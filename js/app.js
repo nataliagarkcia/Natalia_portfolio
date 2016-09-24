@@ -70,7 +70,7 @@ var webPages = [{
 },{
 	url:'images/gallery/1wsm.svg',
 	name:'Friend Finder',
-	href:'http://crystal-game.herokuapp.com/'
+	href:'https://friendsfinder123.herokuapp.com/'
 	
 },{
 	url:'images/gallery/5wsm.svg',
@@ -91,6 +91,7 @@ $("#graphicButton").on("click", function() {
 			$("#picgallery").show();
 			//console.log('here');
 
+			$('#picgallery').html('');
 			for (var i = 0; i < pictureArr.length; i++){
 			
 			var pictureDiv=$("<div>");//create a new div
@@ -112,6 +113,7 @@ $("#graphicButton").on("click", function() {
 		    a.append(picture);
 		    pictureDiv.prepend(p)
 		    pictureDiv.append(a)
+
 		    $('#picgallery').prepend(pictureDiv); // Added the button to the HTML
 
 
@@ -124,7 +126,7 @@ $("#webButton").on("click", function() {
 			$("#webgallery").show();
 			$("#picgallery").hide();
 
-			
+			$('#webgallery').html('');
 			//console.log('here');
 
 			for (var j = 0; j < webPages.length; j++){
