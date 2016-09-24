@@ -55,8 +55,9 @@ a:hover{
     left: 180px;    
     bottom: 176px;
 }
-.imageTitle a:hover{
+.imageTitle{
    color: black;
+   text-align: center;
 
 }
 #lengDiv{
@@ -90,7 +91,8 @@ a:hover{
 }
 #block1{
 	height:auto;
-	background-color:#9fa1a6;
+	background-image: url('../images/blockback.svg');
+    background-color: #9fa1a6;
 	}
 
 #portfolio{
@@ -99,7 +101,7 @@ a:hover{
 }
 #block2{
     height:auto;
-    background: linear-gradient(#9fa1a6, darkgrey,darkslategray);
+    background: linear-gradient( #848484, #9fa1a6);
     background-color:#9fa1a6;
     }
 .subtitle{
@@ -141,9 +143,9 @@ a:hover{
 
 .parallax2 {
     /* The image used */
-    background-color: white;
+    background-image: url('../images/back2.svg');
+    background-color: #848484;
 
-    background-image: url('../images/2.svg');
 
     /* Full height */
     height: 70%;

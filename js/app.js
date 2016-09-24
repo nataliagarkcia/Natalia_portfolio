@@ -57,16 +57,16 @@ var pictureArr = [
 var webPages = [{
 	url:'images/gallery/3wsm.svg',
 	name:'Bamazon',
-	href:'http://crystal-game.herokuapp.com/'
+	href:'https://github.com/nataliagarkcia/Bamazon'
 	
 },{
 	url:'images/gallery/6wsm.svg',
 	name:'Total Trivia',
-	href:'http://crystal-game.herokuapp.com/'
+	href:'https://github.com/nataliagarkcia/TriviaGame'
 },{
 	url:'images/gallery/4wsm.svg',
 	name:'Train Scheduler',
-	href:'http://crystal-game.herokuapp.com/'
+	href:'https://github.com/nataliagarkcia/Train-Scheduler'
 },{
 	url:'images/gallery/1wsm.svg',
 	name:'Friend Finder',
@@ -82,6 +82,7 @@ var webPages = [{
 	name:'Crystal Collector',
 	href:'http://crystal-game.herokuapp.com/'
 }];
+
 
 
 //on click function that will display the pictures
@@ -100,7 +101,7 @@ $("#graphicButton").on("click", function() {
 
 			var a = $("<a>");//create a <a> tag
 			a.addClass('thumbnail');//class added
-			a.attr("href","#");//add attribute that will make this <a> responsive
+			//a.attr("href","#");//add attribute that will make this <a> responsive
 
 			var p = $('<p>');
 			p.text(pictureArr[i].name);
@@ -115,6 +116,8 @@ $("#graphicButton").on("click", function() {
 		    pictureDiv.append(a)
 
 		    $('#picgallery').prepend(pictureDiv); // Added the button to the HTML
+
+		
 
 
 	}
@@ -137,7 +140,7 @@ $("#webButton").on("click", function() {
 
 			var b = $("<a>");//create a <a> tag
 			b.addClass('thumbnail');//class added
-			b.attr("href", webPages[j].href);//add attribute that will make this <a> responsive
+			b.attr("href", "#myModal");//add attribute that will make this <a> responsive
 
 			var t = $('<p>');
 			t.addClass('imageTitle');
@@ -159,8 +162,11 @@ $("#webButton").on("click", function() {
 	}
 });
 
-
-
+function modal(){
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+}
 
 //will create a function that will allow the user click on the picture and pop up a modal
 //grab the array with the pictures and make a for loop to be able to display those in the modal
