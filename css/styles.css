@@ -46,6 +46,31 @@ a:hover{
 #work{
     margin-bottom: 50px;
 }
+#footerP{
+    text-align: right;
+}
+
+#skills{
+    position: relative;
+    left: 180px;    
+    bottom: 176px;
+}
+.imageTitle a:hover{
+   color: black;
+
+}
+#lengDiv{
+    position: relative; 
+    right: 350px;
+}
+
+#lengTitle{
+ 
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 3em;
+    color:white;
+}
 
 #footer{
     padding: 15px 0 15px 0;
@@ -56,6 +81,13 @@ a:hover{
     text-align: center;
     }
 
+.logo{
+    width:28px;
+    float:right;
+    margin-left: 8px;
+
+
+}
 #block1{
 	height:auto;
 	background-color:#9fa1a6;

@@ -43,7 +43,7 @@
 			  		<li role="presentation" class="active " id="menuAbout" ><a href="#profile-pic">About me</a></li>
 			  		<li role="presentation" class="active"><a href="#portfolio">Portfolio</a></li>
 			  		
-			  		<li role="presentation" class="active"><a href="#Contactbox">Contact Me</a></li>
+			  		<li role="presentation" class="active"><a href="#contactbox">Contact Me</a></li>
 			 		 
 				</ul>
 			</div>	
@@ -94,7 +94,7 @@
 	
 					<p class="subtitle2">Education</p>
 
-						<div id="estudios">
+						<div class="estudios">
 						
 							<p><strong>Full Stack Developer</strong><br>
 							<em>University of Central Florida</em><br>
@@ -110,8 +110,10 @@
 							(2011)
 							</p>
 							</div>
+
+					<h1  class="subtitle2">Lenguage</h1>		
 			
-				
+					<img src="images/leng.svg">
 
 					<h1 class="subtitle2">Professional Skills</h1>
 
@@ -121,11 +123,11 @@
 						Indesign <br>
 						HTML<br>
 						CSS<br>
-						Javascript <br>
-						Jquery<br>
+						Javascript / Jquery <br>
 						node<br>
 						MySQL </p>
 						
+						<img src = "images/skills.svg" id="skills">
 
 				</div>
 
@@ -135,7 +137,7 @@
 	
 					<p class="subtitle2">Work Experience</p>
 
-						<div id="estudios">
+						<div class="estudios">
 						
 				<br>
 
@@ -168,6 +170,10 @@
 
 					</div>
 			</div>
+
+			</div>
+
+
 		</div>
 	</div>
 
@@ -219,12 +225,12 @@
 		<div class="container-fluid" id = "contactbox"> 
 			<div class="row">
 
-			<div class="col-md-7"></div>
+			<div class="col-md-1"></div>
 				
 					<div class="col-md-4">
 
-						<h1 class="subtitle">Contact</h1>
-						<p class="returnMessage"></p> 
+						<h1 class="subtitle2">Contact Me</h1>
+							<p class="returnMessage"></p> 
 
 								<form method="post" name="contact_form" action="contact_form.php">
 		 				 <div class="form-group">
@@ -247,26 +253,69 @@
 
 				</form>
 					</div>
+
+					<div class="col-md-3">
+						<!--<p>https://github.com/nataliagarkcia</p>-->
+					</div>
 				</div>	
 
 	</div>
 
 
 	<div class="container-fluid">			
-			<div class="row">
-				<div class="col-md-12" id="footer">
-	            <p>Copyright2016 Natalia Garcia Restrepo<p>
-	            	<a href="https://www.facebook.com/nataliaremolaxa" target="_blank">
-				<img class="logo" src="assets/images/facebook.png" alt="facebook"></a>
+			<div class="row" id="footer">
+				<div class="col-md-7" >
+	            	<p id="footerP">Copyright2016 Natalia Garcia Restrepo</p>
+	            </div>
 
-				<a href="https://github.com/nataliagarkcia" target="_blank">
-				<img class="logo" src="assets/images/github.png" alt="github"></a>
+	            <div class="col-md-4" >
+	      
+	            	<a href="https://www.facebook.com/nataliaremolaxa" target="_blank">
+						<img class="logo" src="images/facebook.png" alt="facebook"></a>
+
+					<a href="https://github.com/nataliagarkcia" target="_blank">
+						<img class="logo" src="images/github.png" alt="github"></a>
+
+					<a href="https://www.linkedin.com/in/nataliagarkcia" target="_blank">
+						<img class="logo" src="images/linkedin.png" alt="linkedin"></a>
+
+
+				   </div>
 		</div>
 	</div>
 </div>
 
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+            <div class="modal-body">
+                <img id="image-gallery-image" class="img-responsive" src="">
+            </div>
+            <div class="modal-footer">
 
-</body>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+                </div>
+
+                <div class="col-md-8 text-justify" id="image-gallery-caption">
+                    
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+		</body>
  	<!-- jQuery -->
     <script src="js/jquery.js"></script>
 

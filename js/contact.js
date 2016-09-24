@@ -1,13 +1,32 @@
+	//when this document
+	$(document).ready(function() {
+	$("#submit").click(function() {
+		
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+		
+	
+	$("#returnMessage").empty(); // To empty previous error/success message.
+	// Checking for blank fields.
+	
+	if (name == '' || email == '') {
+		alert("Please Fill Required Fields");
 
-	<script language="JavaScript">
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
-
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
+	} else {
+	// Returns successful data submission message when the entered information is stored in database.
+	$.post("contact_form.php", {
+		name1: name,
+		email1: email,
+		message1: message,
+		contact1: contact
+		}, function(data) {
+			$("#returnmessage").append(data); // Append returned message to message paragraph.
+	
+		if (data == "Thank you, I will be contacting you soon") {
+			$("#form")[0].reset(); // To reset form fields on success.
+				}
+			});
+		}
+	});
+});
