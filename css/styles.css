@@ -22,8 +22,16 @@ body, html {
 #menu{
     position:relative;
     top:35px;
+
 }
 
+#menu a:hover{
+    color:#9fa1a6;
+}
+.menuItem{
+    color:#9fa1a6;
+    margin-left: 15px
+}
 #header{
     margin:15px 0 15px 0;
 }
@@ -133,7 +141,9 @@ a:hover{
     top:40px;
 }
 
-
+#contactbox{
+    margin-top:100px;
+}
 .subtitle2{
 	font-family: 'Poiret One', cursive;
 	text-align: left;
@@ -141,6 +151,10 @@ a:hover{
 	color:white;
 }
 
+#fbcol{
+    margin-top:140px;
+    margin-left: 30px;
+}
 .parallax2 {
     /* The image used */
     background-image: url('../images/back2.svg');
@@ -172,4 +186,355 @@ a:hover{
 #estudios{
 	text-align: left;
 	margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 980px){
+
+#header{
+    margin:15px 0 50px 0;
+}
+
+.menuItem{
+    color:#9fa1a6;
+    margin-left: 10px
+}
+
+#profile-pic{
+    width:250px;
+    border: 5px solid white;
+    margin-left: 350px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px #888888;
+}
+.bio{
+    margin:20px 60px 20px 60px;
+}
+
+.estudiosdiv{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+
+.skills{
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+#workex{
+    margin-left:470px;
+    position:relative;
+    bottom:960px;
+}
+#block1{
+    height:1450px;
+    background-image: url('../images/blockback2.svg');
+    background-color: #9fa1a6;
+    }
+
+#portfolio{
+    position:relative;
+    left:5px;
+} 
+
+#webButton{
+
+    border-radius: 15px;
+    position:relative;
+    left:520px;
+
+}
+
+#graphicButton{
+
+    border-radius: 15px; 
+    position:relative;
+    left:130px;
+    top:95px;
+}
+
+#graphic{
+    margin-top: 90px;
+}
+
+#contactBox{
+    margin-left: 80px;
+    margin-right:500px;
+}
+
+#fbcol{
+    position: relative;
+    left: 500px;
+    bottom: 395px;
+}
+#footerP{
+    text-align: center;
+}
+
+.logo{
+    width:28px;
+    margin-left: 8px;
+
+}
+}
+@media screen and (max-width: 768px) {
+    #header{
+    margin:15px 0 50px 0;
+}
+
+.menuItem{
+    color:#9fa1a6;
+    margin-left: 10px
+}
+
+#profile-pic{
+    width:240px;
+    border: 5px solid white;
+    margin-left: 250px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px #888888;
+}
+.bio{
+    margin:20px 60px 20px 60px;
+}
+
+.estudiosdiv{
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.skills{
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+#workex{
+    margin-left:370px;
+    position:relative;
+    bottom:960px;
+}
+#block1{
+    height:1450px;
+    background-image: url('../images/blockback3.svg');
+    background-color: #9fa1a6;
+    }
+
+
+
+#webButton{
+
+    border-radius: 15px;
+    position:relative;
+    left:370px;
+
+}
+
+#graphicButton{
+
+    border-radius: 15px; 
+    position:relative;
+    left:50px;
+    top:95px;
+}
+
+#graphic{
+    margin-top: 90px;
+}
+
+#contactBox{
+    margin-left: 80px;
+    margin-right:400px;
+}
+
+#fbcol{
+    position: relative;
+    left: 300px;
+    bottom: 440px;
+}
+
+}
+@media screen and (max-width: 640px){
+
+
+#profile-pic{
+
+    margin-left: 180px;
+
+}
+
+.estudiosdiv{
+    margin-left: 15px;
+}
+
+.skills{
+
+    margin-left: 12px;
+    margin-top: 60px;
+}
+
+.bio{
+    margin:20px 60px 60px 60px;
+}
+
+#workex{
+    margin-left:275px;
+    position:relative;
+    bottom:1000px;
+}
+#block1{
+    height:1450px;
+    background-image: url('../images/blockback4.svg');
+    background-color: #9fa1a6;
+    }
+
+#languagesPic{
+height: 100px;
+}
+
+#webButton{
+
+    border-radius: 15px;
+    position:relative;
+    left:290px;
+
+}
+
+#graphicButton{
+
+    border-radius: 15px; 
+    position:relative;
+    left:1px;
+    top:95px;
+}
+
+#graphic{
+    margin-top: 90px;
+}
+
+#contactBox{
+    margin: 0 80px 0 80px;
+
+}
+
+#fbcol{
+    position: relative;
+    left: 80px;
+    bottom: 30px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/back3.svg');
+    background-color: #848484;
+
+
+    /* Full height */
+    height: 45%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+@media screen and (max-width :1280px) {
+
+
+
+#webButton{
+
+    border-radius: 15px;
+    position:relative;
+    left:5px;
+
+}
+
+#graphicButton{
+
+    border-radius: 15px; 
+    position:relative;
+    left:1px;
+    top:39px;
+}
+#block1{
+    height: 1603px;
+}
+}
+@media screen and (max-width :1280px) {
+
+#profile-pic{
+
+    margin-top: 50px;
+}
+
+#webButton{
+
+    position:relative;
+    left: 19px;
+
+}
+
+#graphicButton{
+
+    position:relative;
+    left:-5px;
+
+}
+#block1{
+    height: 1603px;
+}
+}
+
+@media screen and (max-width :640px) {
+
+
+
+#webButton{
+
+    position:relative;
+    left: 300px;
+    top:-15px;
+
+}
+
+#graphicButton{
+
+    position:relative;
+    left:-5px;
+
+}
+#block1{
+    height: 1433px;
+}
+}
+
+@media screen and (max-width :640px) {
+
+
+#profile-pic{
+
+    margin-left:110px;
+}
+#webButton{
+
+    position:relative;
+    left: 300px;
+    top:-15px;
+
+}
+
+#graphicButton{
+
+    position:relative;
+    left:-5px;
+
+}
+#block1{
+    height: 1433px;
+}
 }
