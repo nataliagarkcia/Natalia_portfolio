@@ -83,7 +83,9 @@ var webPages = [{
 	href:'http://crystal-game.herokuapp.com/'
 }];
 
-
+$( document ).ready(function() {
+   $("#picgallery").show();
+});
 
 //on click function that will display the pictures
 $("#graphicButton").on("click", function() {
@@ -140,7 +142,7 @@ $("#webButton").on("click", function() {
 
 			var b = $("<a>");//create a <a> tag
 			b.addClass('thumbnail');//class added
-			b.attr("href", "#myModal");//add attribute that will make this <a> responsive
+			b.attr("href", webPages[j].href).attr('target','_blank');//add attribute that will make this <a> responsive
 
 			var t = $('<p>');
 			t.addClass('imageTitle');
@@ -162,72 +164,3 @@ $("#webButton").on("click", function() {
 	}
 });
 
-function modal(){
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-}
-
-//will create a function that will allow the user click on the picture and pop up a modal
-//grab the array with the pictures and make a for loop to be able to display those in the modal
-//create configuration for the contact form
-//grab values and send and ajax to be able to grab those
-//maybe tray to send thos out to an actual email
-
-
- $(document).ready(function(){
-
-    loadGallery(true, 'a.thumbnail');
-
-    //This function disables buttons when needed
-    function disableButtons(counter_max, counter_current){
-        $('#show-previous-image, #show-next-image').show();
-        if(counter_max == counter_current){
-            $('#show-next-image').hide();
-        } else if (counter_current == 1){
-            $('#show-previous-image').hide();
-        }
-    }
-
-    /**
-     *
-     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-     * @param setClickAttr  Sets the attribute for the click handler.
-     */
-
-    function loadGallery(setIDs, setClickAttr){
-        var current_image,
-            selector,
-            counter = 0;
-
-        $('#show-next-image, #show-previous-image').click(function(){
-            if($(this).attr('id') == 'show-previous-image'){
-                current_image--;
-            } else {
-                current_image++;
-            }
-
-            selector = $('[data-image-id="' + current_image + '"]');
-            updateGallery(selector);
-        });
-
-        function updateGallery(selector) {
-            var $sel = selector;
-            current_image = $sel.data('image-id');
-            $('#image-gallery-caption').text($sel.data('caption'));
-            $('#image-gallery-title').text($sel.data('title'));
-            $('#image-gallery-image').attr('src', $sel.data('image'));
-            disableButtons(counter, $sel.data('image-id'));
-        }
-
-        if(setIDs == true){
-            $('[data-image-id]').each(function(){
-                counter++;
-                $(this).attr('data-image-id',counter);
-            });
-        }
-        $(setClickAttr).on('click',function(){
-            updateGallery($(this));
-        });
-    }
-});
