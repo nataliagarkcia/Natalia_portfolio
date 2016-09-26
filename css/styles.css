@@ -279,7 +279,7 @@ a:hover{
 
 }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: width: 768px) {
     #header{
     margin:15px 0 50px 0;
 }
@@ -465,76 +465,58 @@ height: 100px;
     height: 1603px;
 }
 }
-@media screen and (max-width :1280px) {
+
+
+@media screen and (min-width:465px){
+
 
 #profile-pic{
 
     margin-top: 50px;
+    margin-left: 90px;
 }
-
-#webButton{
-
-    position:relative;
-    left: 19px;
-
-}
-
-#graphicButton{
-
-    position:relative;
-    left:-5px;
-
-}
-#block1{
-    height: 1603px;
-}
-}
-
-@media screen and (max-width :640px) {
 
 
 
 #webButton{
 
     position:relative;
-    left: 300px;
-    top:-15px;
+    left: 70px;
+    top:45px;
 
 }
 
 #graphicButton{
 
     position:relative;
-    left:-5px;
+    left:80px;
 
 }
 #block1{
-    height: 1433px;
+    height: 2000px;
+    background-image: url('../images/blockback5.svg');
+}
+
+.estudiosdiv{
+    margin-left: 120px;
+}
+
+.skills{
+
+    margin-left: 100px;
+    margin-top: 60px;
+}
+#workex{
+    margin-left:90px;
+    margin-top: 860px;
+}
+
+#fbcol{
+    margin-top:140px;
+    position: relative;
+    left:30px;
+    width: 200px;
+    margin-left: 0;
 }
 }
 
-@media screen and (max-width :640px) {
-
-
-#profile-pic{
-
-    margin-left:110px;
-}
-#webButton{
-
-    position:relative;
-    left: 300px;
-    top:-15px;
-
-}
-
-#graphicButton{
-
-    position:relative;
-    left:-5px;
-
-}
-#block1{
-    height: 1433px;
-}
-}
