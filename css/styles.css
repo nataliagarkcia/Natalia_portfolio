@@ -467,13 +467,13 @@ height: 100px;
 }
 
 
-@media screen and (min-width:465px){
+@media screen and (max-width:360px){
 
 
 #profile-pic{
 
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 30px;
 }
 
 
@@ -481,7 +481,7 @@ height: 100px;
 #webButton{
 
     position:relative;
-    left: 70px;
+    left: 10px;
     top:45px;
 
 }
@@ -489,32 +489,33 @@ height: 100px;
 #graphicButton{
 
     position:relative;
-    left:80px;
+    left:20px;
 
 }
 #block1{
-    height: 2000px;
-    background-image: url('../images/blockback5.svg');
+    height: 2500px;
+    background-color: #848484;
+    
 }
 
 .estudiosdiv{
-    margin-left: 120px;
+    margin-left: 40px;
 }
 
 .skills{
 
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: 60px;
 }
 #workex{
-    margin-left:90px;
+    margin-left:10px;
     margin-top: 860px;
 }
 
 #fbcol{
     margin-top:140px;
     position: relative;
-    left:30px;
+    left:-2px;
     width: 200px;
     margin-left: 0;
 }
